@@ -6,7 +6,7 @@ The dataset originates from Hero DMC Heart Institute, affiliated with Dayanand M
 
 ## Project Overview
 - **Total Patient Discharges Analyzed:** 12,182
-- **Tools Used:** MySQL Workbench, Tableau Public, SQL, Data Modeling
+- **Tools Used:** MySQL Workbench, Tableau Public, Data Modeling
 
 ## Key Insights & Visualizations
 1. **Total Volume KPI:** High-level executive summary tracking total inpatient throughput and operational volume.
