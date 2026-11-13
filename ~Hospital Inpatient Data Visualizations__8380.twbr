@@ -1,0 +1,973 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Hospital_Admission_Data' inline='true' name='federated.14jc4qb0eqz3ak13etul201m4prl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Hospital_Admission_Data' name='textscan.1720buw1wy398q11cc9kj0nbw6bz'>
+            <connection class='textscan' directory='C:/HDHI Admission' filename='Hospital_Admission_Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1720buw1wy398q11cc9kj0nbw6bz' name='Hospital_Admission_Data.csv' table='[Hospital_Admission_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='SNO' ordinal='0' />
+            <column datatype='integer' name='Patient_MRD_No' ordinal='1' />
+            <column datatype='date' name='Date_Of_Admission' ordinal='2' />
+            <column datatype='date' name='Date_Of_Discharge' ordinal='3' />
+            <column datatype='integer' name='Age' ordinal='4' />
+            <column datatype='string' name='Gender' ordinal='5' />
+            <column datatype='string' name='Rural_Locality' ordinal='6' />
+            <column datatype='string' name='Admission_Type' ordinal='7' />
+            <column datatype='integer' name='Duration_Of_Stay' ordinal='8' />
+            <column datatype='string' name='Outcome' ordinal='9' />
+            <column datatype='integer' name='Diabetes' ordinal='10' />
+            <column datatype='integer' name='Hypertension' ordinal='11' />
+            <column datatype='integer' name='Coronary_Artery_Disease' ordinal='12' />
+            <column datatype='integer' name='Chronic_Kidney_Disease' ordinal='13' />
+            <column datatype='integer' name='Ejection_Fraction' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SNO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SNO]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>SNO</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_MRD_No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Patient_MRD_No]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Patient_MRD_No</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date_Of_Admission</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date_Of_Admission]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Date_Of_Admission</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date_Of_Discharge</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date_Of_Discharge]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Date_Of_Discharge</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rural_Locality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rural_Locality]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Rural_Locality</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Admission_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Admission_Type]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Admission_Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration_Of_Stay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration_Of_Stay]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Duration_Of_Stay</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Outcome]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Outcome</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diabetes]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Diabetes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hypertension</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hypertension]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Hypertension</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coronary_Artery_Disease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Coronary_Artery_Disease]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Coronary_Artery_Disease</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chronic_Kidney_Disease</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Chronic_Kidney_Disease]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Chronic_Kidney_Disease</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ejection_Fraction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ejection_Fraction]</local-name>
+            <parent-name>[Hospital_Admission_Data.csv]</parent-name>
+            <remote-alias>Ejection_Fraction</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Admission Type' datatype='string' name='[Admission_Type]' role='dimension' type='nominal' />
+      <column caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='10' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column caption='Day Of Week' datatype='string' name='[Calculation_0575935420428288]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;, [Date_Of_Discharge])' />
+      </column>
+      <column caption='Chronic Kidney Disease' datatype='integer' name='[Chronic_Kidney_Disease]' role='measure' type='quantitative' />
+      <column caption='Coronary Artery Disease' datatype='integer' name='[Coronary_Artery_Disease]' role='measure' type='quantitative' />
+      <column caption='Date Of Admission' datatype='date' name='[Date_Of_Admission]' role='dimension' type='ordinal' />
+      <column caption='Date Of Discharge' datatype='date' name='[Date_Of_Discharge]' role='dimension' type='ordinal' />
+      <column caption='Duration Of Stay' datatype='integer' name='[Duration_Of_Stay]' role='measure' type='quantitative' />
+      <column caption='Ejection Fraction' datatype='integer' name='[Ejection_Fraction]' role='measure' type='quantitative' />
+      <column caption='Patient MRD No' datatype='integer' name='[Patient_MRD_No]' role='measure' type='quantitative' />
+      <column caption='Rural Locality' datatype='string' name='[Rural_Locality]' role='dimension' type='nominal' />
+      <column caption='Hospital_Admission_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/farih/AppData/Local/Temp/TableauTemp/#TableauTemp_0br8sjc0bkm1821cc6rhb069swn9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/13/2026 06:18:00 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>SNO</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SNO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SNO</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12182</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient_MRD_No</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Patient_MRD_No]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient_MRD_No</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5937</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date_Of_Admission</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date_Of_Admission]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date_Of_Admission</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>851</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date_Of_Discharge</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date_Of_Discharge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date_Of_Discharge</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>899</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>88</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rural_Locality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Rural_Locality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rural_Locality</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Admission_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Admission_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Admission_Type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Duration_Of_Stay</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Duration_Of_Stay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Duration_Of_Stay</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outcome</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diabetes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Diabetes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diabetes</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hypertension</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hypertension]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hypertension</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coronary_Artery_Disease</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Coronary_Artery_Disease]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Coronary_Artery_Disease</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Chronic_Kidney_Disease</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Chronic_Kidney_Disease]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Chronic_Kidney_Disease</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ejection_Fraction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ejection_Fraction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ejection_Fraction</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Hospital_Admission_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='1000' show-hidden-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='SNO' />
+        <field-sort-custom-order field='Patient_MRD_No' />
+        <field-sort-custom-order field='Date_Of_Admission' />
+        <field-sort-custom-order field='Date_Of_Discharge' />
+        <field-sort-custom-order field='Calculation_0575935420428288' />
+        <field-sort-custom-order field='Age' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='Rural_Locality' />
+        <field-sort-custom-order field='Admission_Type' />
+        <field-sort-custom-order field='Duration_Of_Stay' />
+        <field-sort-custom-order field='Outcome' />
+        <field-sort-custom-order field='Diabetes' />
+        <field-sort-custom-order field='Hypertension' />
+        <field-sort-custom-order field='Coronary_Artery_Disease' />
+        <field-sort-custom-order field='Chronic_Kidney_Disease' />
+        <field-sort-custom-order field='Ejection_Fraction' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Hospital_Admission_Data.csv' id='Hospital_Admission_Data.csv_70661066EFCF4A0C993B42BA2FCA602F'>
+            <properties context=''>
+              <relation connection='textscan.1720buw1wy398q11cc9kj0nbw6bz' name='Hospital_Admission_Data.csv' table='[Hospital_Admission_Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='SNO' ordinal='0' />
+                  <column datatype='integer' name='Patient_MRD_No' ordinal='1' />
+                  <column datatype='date' name='Date_Of_Admission' ordinal='2' />
+                  <column datatype='date' name='Date_Of_Discharge' ordinal='3' />
+                  <column datatype='integer' name='Age' ordinal='4' />
+                  <column datatype='string' name='Gender' ordinal='5' />
+                  <column datatype='string' name='Rural_Locality' ordinal='6' />
+                  <column datatype='string' name='Admission_Type' ordinal='7' />
+                  <column datatype='integer' name='Duration_Of_Stay' ordinal='8' />
+                  <column datatype='string' name='Outcome' ordinal='9' />
+                  <column datatype='integer' name='Diabetes' ordinal='10' />
+                  <column datatype='integer' name='Hypertension' ordinal='11' />
+                  <column datatype='integer' name='Coronary_Artery_Disease' ordinal='12' />
+                  <column datatype='integer' name='Chronic_Kidney_Disease' ordinal='13' />
+                  <column datatype='integer' name='Ejection_Fraction' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_EED005D8AE924B0381ECF31D68CA6CEA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Clinical Inpatient Admissions Overview' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Gender' />
+        <param name='target' value='Clinical Inpatient Admissions Overview' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital_Admission_Data' name='federated.14jc4qb0eqz3ak13etul201m4prl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14jc4qb0eqz3ak13etul201m4prl'>
+            <column caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='10' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Patient MRD No' datatype='integer' name='[Patient_MRD_No]' role='measure' type='quantitative' />
+            <column-instance column='[Patient_MRD_No]' derivation='Count' name='[cnt:Patient_MRD_No:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14jc4qb0eqz3ak13etul201m4prl].[cnt:Patient_MRD_No:qk]</rows>
+        <cols>[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Age (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.14jc4qb0eqz3ak13etul201m4prl].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{65D18A78-7686-468C-9B00-4E8F8B9CF4F5}' />
+    </worksheet>
+    <worksheet name='Discharges by Day of Week'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital_Admission_Data' name='federated.14jc4qb0eqz3ak13etul201m4prl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14jc4qb0eqz3ak13etul201m4prl'>
+            <column caption='Day Of Week' datatype='string' name='[Calculation_0575935420428288]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;, [Date_Of_Discharge])' />
+            </column>
+            <column caption='Date Of Discharge' datatype='date' name='[Date_Of_Discharge]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+            <column caption='Patient MRD No' datatype='integer' name='[Patient_MRD_No]' role='measure' type='quantitative' />
+            <column-instance column='[Patient_MRD_No]' derivation='Count' name='[cnt:Patient_MRD_No:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0575935420428288]' derivation='None' name='[none:Calculation_0575935420428288:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Calculation_0575935420428288:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_0575935420428288:nk]' />
+              <groupfilter function='member' level='[none:Calculation_0575935420428288:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Outcome:nk]'>
+            <groupfilter function='member' level='[none:Outcome:nk]' member='&quot;DISCHARGE&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Outcome:nk]</column>
+            <column>[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Calculation_0575935420428288:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.14jc4qb0eqz3ak13etul201m4prl].[cnt:Patient_MRD_No:qk]</rows>
+        <cols>[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Calculation_0575935420428288:nk]</cols>
+      </table>
+      <simple-id uuid='{23779883-C912-43B0-8E98-5ACC7AFBB36D}' />
+    </worksheet>
+    <worksheet name='Emergency vs OPD (Outpatient Department)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital_Admission_Data' name='federated.14jc4qb0eqz3ak13etul201m4prl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14jc4qb0eqz3ak13etul201m4prl'>
+            <column caption='Admission Type' datatype='string' name='[Admission_Type]' role='dimension' type='nominal' />
+            <column caption='Patient MRD No' datatype='integer' name='[Patient_MRD_No]' role='measure' type='quantitative' />
+            <column-instance column='[Patient_MRD_No]' derivation='Count' name='[cnt:Patient_MRD_No:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Admission_Type]' derivation='None' name='[none:Admission_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Admission_Type:nk]</rows>
+        <cols>[federated.14jc4qb0eqz3ak13etul201m4prl].[cnt:Patient_MRD_No:qk]</cols>
+      </table>
+      <simple-id uuid='{6910B5E6-02DB-43DD-990E-6DD4FA4D9095}' />
+    </worksheet>
+    <worksheet name='KPI- Total Discharge'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital_Admission_Data' name='federated.14jc4qb0eqz3ak13etul201m4prl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14jc4qb0eqz3ak13etul201m4prl'>
+            <column caption='Patient MRD No' datatype='integer' name='[Patient_MRD_No]' role='measure' type='quantitative' />
+            <column-instance column='[Patient_MRD_No]' derivation='Count' name='[cnt:Patient_MRD_No:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14jc4qb0eqz3ak13etul201m4prl].[cnt:Patient_MRD_No:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='48'>&lt;</run>
+                <run fontsize='48'>[federated.14jc4qb0eqz3ak13etul201m4prl].[cnt:Patient_MRD_No:qk]</run>
+                <run fontsize='48'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E428FAE7-C57F-4A0F-AFAA-BA215BBDE2A2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Clinical Inpatient Admissions Overview'>
+      <style />
+      <size maxheight='800' maxwidth='1260' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='13' param='horz' type-v2='layout-flow' w='98730' x='635' y='1000'>
+            <zone h='98000' id='9' param='vert' type-v2='layout-flow' w='98730' x='635' y='1000'>
+              <zone fixed-size='222' h='28750' id='10' is-fixed='true' type-v2='title' w='98730' x='635' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='69250' id='7' type-v2='layout-basic' w='98730' x='635' y='29750'>
+                <zone h='69250' id='6' name='Discharges by Day of Week' w='49364' x='635' y='29750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='31875' id='5' name='Emergency vs OPD (Outpatient Department)' w='49366' x='49999' y='29750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='37375' id='11' name='Age Distribution' w='49366' x='49999' y='61625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='33750' id='3' name='KPI- Total Discharge' w='33333' x='64127' y='6125' />
+        <zone h='9500' id='14' name='Age Distribution' pane-specification-id='0' param='[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Gender:nk]' type-v2='color' w='11111' x='84841' y='63875' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98730' x='635' y='1000'>
+                <zone fixed-size='222' h='28750' id='10' type-v2='title' w='98730' x='635' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='33750' id='3' is-fixed='true' name='KPI- Total Discharge' w='33333' x='64127' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69250' id='6' is-fixed='true' name='Discharges by Day of Week' w='49364' x='635' y='29750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='247' h='31875' id='5' is-fixed='true' name='Emergency vs OPD (Outpatient Department)' w='49366' x='49999' y='29750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37375' id='11' is-fixed='true' name='Age Distribution' w='49366' x='49999' y='61625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9500' id='14' name='Age Distribution' pane-specification-id='0' param='[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Gender:nk]' type-v2='color' w='11111' x='84841' y='63875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5FBBEE47-26CE-4989-B131-2116B33F9583}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='KPI- Total Discharge'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4113776E-FD7D-4362-AFF9-BE5B52364098}' />
+    </window>
+    <window class='worksheet' name='Emergency vs OPD (Outpatient Department)'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3CE766F4-869C-4050-BD04-6138767E1AB8}' />
+    </window>
+    <window class='worksheet' name='Discharges by Day of Week'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E00E884-FED5-4BC6-9BDD-C618A38ED718}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Clinical Inpatient Admissions Overview'>
+      <viewpoints>
+        <viewpoint name='Age Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Discharges by Day of Week'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Emergency vs OPD (Outpatient Department)' />
+        <viewpoint name='KPI- Total Discharge'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{B722D120-5C0D-446C-BB56-BF42C07A2789}' />
+    </window>
+    <window class='worksheet' name='Age Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14jc4qb0eqz3ak13etul201m4prl].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{269AFD3C-3FBF-496A-BD15-7242219C9024}' />
+    </window>
+  </windows>
+</workbook>
